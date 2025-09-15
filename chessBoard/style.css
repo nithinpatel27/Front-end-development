@@ -1,0 +1,30 @@
+.container{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    
+    
+}
+.child{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+}
+.child1,.child2{
+    display: flex;
+}
+.child1>div,.child2>div{
+     /* border: 2px solid blue; */
+     display: flex;  
+     width:60px;
+     height:60px;
+     padding: 10px;
+}
+.child1>div:nth-child(odd),.child2>div:nth-child(even){
+    background-color: bisque;
+}
+.child1>div:nth-child(even),.child2>div:nth-child(odd){
+    background-color: brown;
+}
+
